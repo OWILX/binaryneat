@@ -1,5 +1,5 @@
-from sneat.population import Population
-from sneat.config import get_config
+from binaryneat.population import Population
+from binaryneat.config import get_config
 import numpy as np
 import pickle as pkl
 from tabulate import tabulate as tb
