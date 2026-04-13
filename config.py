@@ -5,13 +5,18 @@ import os
 
 # logic gates
 gates = {
-    "AND":  lambda x, y: x & y,
-    "NAND": lambda x, y: ~(x & y),
-    "OR":   lambda x, y: x | y,
-    "NOR":  lambda x, y: ~(x | y),
-    "XOR":  lambda x, y: x ^ y,
-    "XNOR": lambda x, y: ~(x ^ y),
-    "NOT":  lambda x, y: ~x,
+    "AND":   lambda x, y: x & y,
+    "NAND":  lambda x, y: ~(x & y),
+    "OR":    lambda x, y: x | y,
+    "NOR":   lambda x, y: ~(x | y),
+    "XOR":   lambda x, y: x ^ y,
+    "XNOR":  lambda x, y: ~(x ^ y),
+    "NOTA":  lambda x, y: ~x,
+    "NOTB":  lambda x, y: ~y,
+    "EQA":   lambda x, y: x,
+    "EQB":   lambda x, y: y,
+    "ALW0":  lambda x, y: 0,
+    "ALW1":  lambda x, y: 1,
 }
 
 GATE_KEYS = list(gates.keys())
